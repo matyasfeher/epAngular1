@@ -1,0 +1,21 @@
+Show me the list
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>First</td>   
+            <td>Last</td>   
+            <td>Pic</td>   
+            <td>Details</td>   
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="u in users">
+            <td>{{u.first}}</td>
+            <td>{{u.last}}</td>
+            <td><img src="{{u.picture.thumbnail}}"></td>
+            <td> <a href="#/details/{{u.dob}}"> Details</a>  </td>
+        </tr>
+    </tbody>
+    
+</table>
